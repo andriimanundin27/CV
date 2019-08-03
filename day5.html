@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script language="JavaScript">
+    function showInput() {
+        function Student(nama,umur,benda,jumlah)
+        {
+            this.orang = {
+                'nama': nama,
+                'umur' : umur
+            }
+            this.fasilitas = {
+                'benda': benda,
+                'jumlah' : jumlah
+            }
+		  this.tampil = function()
+		  {
+            document.write(this.orang.nama+" ("+this.orang.umur+")");
+            document.write("<br/>sedang belajar di mamicamp menggunakan<br/>");
+            document.write(this.fasilitas.benda[0]+"("+this.fasilitas.jumlah[0]+")");
+            document.write(" dan ");
+            document.write(this.fasilitas.benda[1]+"("+this.fasilitas.jumlah[1]+")");
+		  }
+		}
+		nama=document.getElementById("nama").value
+		umur=document.getElementById("umur").value
+		benda0=document.getElementById("benda0").value
+		benda1=document.getElementById("benda1").value
+		benda=[]
+		benda.push(benda0)
+		benda.push(benda1)
+		jumlah0=document.getElementById("jumlah0").value
+		jumlah1=document.getElementById("jumlah1").value
+		jumlah=[]
+		jumlah.push(jumlah0)
+		jumlah.push(jumlah1)
+        let st1 = new Student(nama,umur,benda,jumlah);
+        document.getElementById('display').innerHTML = st1.tampil();
+    }
+    
+    $(document).ready(function() {
+    	var max_fields      = 2; //maximum input boxes allowed
+    	var wrapper   		= $(".input_fields_wrap"); //Fields wrapper
+    	var add_button      = $(".add_field_button"); //Add button ID
+    	
+    	var x = 1; //initlal text box count
+    	$(add_button).click(function(e){ //on add input button click
+    		e.preventDefault();
+    		if(x < max_fields){ //max input box allowed
+    			p=x++; //text box increment
+    			$(wrapper).append('<div><br/><input class="jumlah" type="text" name="message" id="benda'+p+'"  placeholder="benda"><input class="jumlah" type="text" name="message" id="jumlah'+p+'"  placeholder="jumlah"><br/><a href="#" class="remove_field">Remove</a></div>'); //add input box
+    		}
+    	});
+    	
+    	$(wrapper).on("click",".remove_field", function(e){ //user click on remove text
+    		e.preventDefault(); $(this).parent('div').remove(); x--;
+    	})
+    });
+  </script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="mamicamp.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Andri Imanudin</title>
+</head>
+<body>
+	<header class="container">
+		<div class="row">
+			<div class="sampul text-center comic">Aim Dokumentasi</div>
+			<nav class="text-center comic">
+			    <a href="/index.html">Home</a>
+    			<a href="/CV.html">Curriculum Vitae</a>
+    			<a href="CodeDoc.html">Code Documentation</a>
+   			</nav> 
+		</div>
+	</header>
+	
+	<section class="container day2">
+	    <div class="login-page day2">
+	        <form>
+	            <input class="nama" type="text" name="message" id="nama" placeholder="nama">
+	            <br/>
+	            <input class="umur" type="number" name="message" id="umur" placeholder="umur">
+	            <br/>
+	            <br/>
+	            <div class="input_fields_wrap">
+	                <button class="add_field_button">+</button>
+                    <div>
+                        <input class="benda" type="text" name="message" id="benda0"  placeholder="benda">
+                        <input class="jumlah" type="number" name="message" id="jumlah0" placeholder="jumlah">
+                    </div>
+                </div>
+	       </form>
+	       <input type="submit" onclick="showInput();"><br/>
+    	</div>
+	</section>
+
+	<footer>
+	    <div class="layer1 text-center">
+	        <p class="comic">Mamicamp Front-End</p>
+	        <p>&copy;2019</p>
+	    </div>
+	    <div class="layer2 text-center">
+	        <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+	    </div>
+	</footer>
+</body>
+</html>

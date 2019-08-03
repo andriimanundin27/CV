@@ -1,0 +1,441 @@
+  @media only screen and (max-width: 767px){
+    .sampul{
+        font-size: 2.5em;
+    }
+    .container.cv{
+      overflow: hidden;
+    }
+    .cv{
+      font-size: 1em;
+      font-weight: bold;
+    }
+    .container.pribadian{
+      overflow: hidden;
+      margin-bottom: 3%;
+    }
+    p.nama{
+      font-size: 2em;
+      font-weight:bold;
+    }
+    p.kelebihan{
+      font-size: 1.3em;
+    }
+    p.sifat{
+      font-size: 1.24em;
+      font-weight: bold;
+    }
+    nav a{
+        font-size: 0.8em;
+    }
+    /*day2*/
+    .login-page.day2 {
+            max-width: 100%;
+            max-height: 100%;
+            margin-top:10% !important;
+        }
+  }
+  @media only screen and (min-width: 1201px){
+    .sampul{
+        font-size: 4em;
+    }
+    .cv{
+      font-size: 2.3em;
+    }
+    .container.pribadian{
+      padding-left: 10%;
+      overflow: hidden;
+    }
+    p.nama{
+      font-size: 6.5em;
+    }
+    p.kelebihan{
+      font-size: 2.5em;
+    }
+    p.sifat{
+      font-size: 2.5em;
+    }
+    
+    nav a{
+        font-size: 1.1em;
+    }
+    
+    /*day2*/
+    .login-page.day2 {
+            max-width: 40%;
+            max-height: 40%;
+            margin-top:3% !important;
+        }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1200px){
+    .sampul{
+        font-size: 4em;
+    }
+    .cv{
+      font-size: 1.5em;
+    }
+    .container.pribadian{
+      padding-left: 10%;
+      overflow: hidden;
+    }
+    p.nama{
+      font-size: 4em;
+    }
+    p.kelebihan{
+      font-size: 1.5em;
+    }
+    p.sifat{
+      font-size: 1.4em;
+      font-weight:bold;
+    }
+    
+    nav a{
+        font-size: 1.1em;
+    }
+    
+    /*day2*/
+    .login-page.day2 {
+            max-width: 50%;
+            max-height: 50%;
+            margin-top:3% !important;
+        }
+}
+
+      header nav {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        border-top:solid;
+        border-bottom: solid;
+        border-width:thin;
+        border-color:#3E6194;
+    }
+
+    .comic{
+      font-family: 'Comic Sans MS', serif;
+    }
+
+    .sampul{
+      font-weight:bold;
+      padding: 5%;
+      color: #3E6194;
+      overflow: hidden;
+    }
+
+    .cv{
+      border:none;
+      background: #3E6194;
+      color: white;
+      display: block;
+      margin-top: 2%;
+    }
+
+    p.nama{
+      color: #3E6194;
+    }
+
+    p.kelebihan{
+      background:#3E6194;
+      color: white;
+    }
+
+    nav a{
+      margin:2%;
+      color: #3E6194;
+    }
+    
+
+    a{
+        text-decoration: none !important;
+    }
+    
+    a:hover{
+        font-weight:bold;
+    }
+    
+    a:active{
+        font-weight:bold;
+    }
+    a:focus{
+        font-weight:bold;
+    }
+
+    .image-container{
+      overflow: hidden;
+    }
+
+    .image-container img{
+      max-width: 50%;
+      border: solid 10px;
+      color: #3E6194;
+    }
+    
+    .katakata{
+        font-size:4.5em;
+        font-weight:italic;
+        color: #fff;
+        background: #3E6194;
+    }
+    
+    p.katakata{
+        margin-top:7%;
+        border:dotted;
+        padding:2%;
+    }
+    
+    /*Footer*/
+    
+    .layer1{
+        margin-top:7%;
+        border:none;
+        background:#3E6194;
+        padding-bottom:2%;
+        padding-top:1%;
+    }
+    .layer1 p{
+        color:white;
+        font-size:1.2em;
+    }
+    
+    .layer2 a{
+        font-size:1em;
+        font-weight:bold;
+    }
+    
+/*day1*/
+
+
+section.day1{
+    border: none;
+    height:100%;
+    width:100%;
+    background: linear-gradient(#11998e,#38ef7d) !important;
+    background-image: url('https://source.unsplash.com/random');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.login-page.day1 {
+  background-color: #fff;
+  color: #566375;
+  /*width: 25%;
+  height: 60%;*/
+  width: 50%;
+  height: 50%;
+  position: relative;
+  top: 20%;
+  margin:auto;
+  padding: 15px;
+  border-radius: 5px;
+  border:solid 10px;
+  border-color: transparent;
+  border-right-color: #11998e !important;
+  text-align: center;
+}
+
+.comic.day1 {
+  font-family: 'Comic Sans MS', serif;
+}
+
+.login-title.day1 {
+  font-size: 30px;
+  text-align: center;
+  color: #11998e;
+}
+
+p.login-title.day1{
+  border:none;
+  margin:30 auto;
+}
+
+.box.day1{
+    border:none;
+    text-align: center;
+    margin:0px;
+    margin-top: 50px !important;
+}
+
+.login-input.day1 {
+  width: 90%;
+  height: 15%;
+  margin:10px auto;
+  border:solid 1px;
+  border-color:#11998e;
+  font-size: 100%;
+  outline: none; 
+  color: #11998e;
+  padding: 20px;
+  border-radius:25px;
+}
+
+.login-input.day1:focus {
+  color:#38ef7d;
+  border-color:#38ef7d;
+}
+
+.login-button-wrapper.day1 {
+  text-align: center;
+}
+
+.login-button.day1 {
+  padding: 10px 35px;
+  margin-top: 40px;
+  font-size: 15px;
+}
+
+.login-button-ok.day1 {
+  border: none;
+  background-color: #11998e;
+  color: #fff;
+  border-radius:35px;
+  outline: none;
+}
+
+.login-button.day1:hover {
+ color: #fff;
+ background-color: #38ef7d;
+ border-color: #38ef7d;
+ border-radius:35px;
+ border:solid 1px;
+}
+
+.login-button-ok.day1:active {
+  color: white;
+  background-color:#11998e;
+  /*box-shadow: 0 2px #38ef7d;
+  transform: translateY(4px);*/
+}
+
+a.day1{
+  text-decoration: none !important;
+}
+
+.login-button-cancel.day1 {
+  color: #38ef7d;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+}
+
+a.login-button-cancel.day1:active{
+  color:#38ef7d;
+}
+
+.login-button-cancel.day1:hover {
+  color:#11998e;
+}
+
+/*day2*/
+
+.login-page.day2 {
+    overflow=hidden;
+    background-color: #3E6194;
+    position: relative;
+    margin:auto;
+    padding: 15px;
+    border-radius: 5px;
+    border:solid 10px;
+    border-color: transparent;
+    border-right-color: #11998e !important;
+    text-align: center;
+}
+
+.comic.day2 {
+  font-family: 'Comic Sans MS', serif;
+}
+
+.login-title.day2 {
+  font-size: 2.5em;
+  text-align: center;
+  color: #fff;
+}
+
+p.login-title.day2{
+  border:none;
+  margin:30 auto;
+}
+
+.box.day2{
+    border:none;
+    text-align: center;
+    margin:0px;
+    margin-top: 50px !important;
+}
+
+.login-input.day2 {
+  width: 90%;
+  height: 15%;
+  margin:10px auto;
+  border:solid 1px;
+  border-color:#3E6194;
+  font-size: 100%;
+  outline: none; 
+  color: #3E6194;
+  padding: 20px;
+  border-radius:25px;
+}
+
+.login-input.day2:focus {
+  color:red;
+  border-color:red;
+}
+
+.login-button-wrapper.day2 {
+  text-align: center;
+}
+
+.login-button.day2 {
+  padding: 10px 35px;
+  margin-top: 40px;
+  font-size: 15px;
+}
+
+.login-button-ok.day2 {
+  border: none;
+  background-color: #11998e;
+  color: #fff;
+  border-radius:35px;
+  outline: none;
+}
+
+.login-button.day2:hover {
+ color: #fff;
+ background-color: #38ef7d;
+ border-color: #38ef7d;
+ border-radius:35px;
+}
+
+.login-button-ok.day2:active {
+  color: white;
+  background-color:#11998e;
+  /*box-shadow: 0 2px #38ef7d;
+  transform: translateY(4px);*/
+}
+
+a.day2{
+  text-decoration: none !important;
+}
+
+.login-button-cancel.day2 {
+  color: #38ef7d;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+}
+
+a.login-button-cancel.day2:active{
+  color:#38ef7d;
+}
+
+.login-button-cancel.day2:hover {
+  color:#11998e;
+}
+
+/*day3*/
+
+label.font-day3{
+    color:white;
+    font-weight:bold;
+}
